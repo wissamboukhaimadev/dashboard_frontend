@@ -14,11 +14,9 @@ export default function Home() {
           <SideNav />
         </div>
         <div className="ml-20 mt-10" >
-          <div className="mx-20 grid grid-cols-3 gap-4">
-            {Array.from([1, 2, 3, 4]).map(index => (
-              <CardsValues key={index} />
-            ))}
-          </div>
+
+
+          <CardsValues />
 
           <ChartsData />
         </div>
