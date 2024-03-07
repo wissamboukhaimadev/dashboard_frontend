@@ -5,7 +5,7 @@ import { Progress } from "../ui/progress";
 export function CardsValues() {
     return (
         <div className="mx-20 grid grid-cols-3 gap-10">
-            <Card className="py-5 px-7 shadow-lg rounded-lg">
+            <Card className="py-5 px-7 shadow-lg rounded-lg cursor-pointer hover:scale-110 transition-all">
                 <div className="flex justify-between">
                     <CardTitle>
                         <p>Tempurature</p>
@@ -19,7 +19,7 @@ export function CardsValues() {
                     <Progress value={33} indicatorColor="bg-blue-500" forgroundColor="bg-white" className="shadow-xl " />
                 </CardDescription>
             </Card>
-            <Card className="py-5 px-7 shadow-lg rounded-lg">
+            <Card className="py-5 px-7 shadow-lg rounded-lg cursor-pointer hover:scale-110 transition-all">
                 <div className="flex justify-between">
                     <CardTitle>
                         <p>Humidity</p>
@@ -33,7 +33,7 @@ export function CardsValues() {
                     <Progress value={27} indicatorColor="bg-orange-400" forgroundColor="bg-white" className="shadow-xl " />
                 </CardDescription>
             </Card>
-            <Card className="py-5 px-7 shadow-lg rounded-lg">
+            <Card className="py-5 px-7 shadow-lg rounded-lg cursor-pointer hover:scale-110 transition-all">
                 <div className="flex justify-between">
                     <CardTitle>
                         <p>CO<sub>2</sub></p>
