@@ -1,4 +1,4 @@
-import { AreaChart, LayoutDashboard, PieChart, School } from "lucide-react";
+import { AreaChart, LayoutDashboard, PieChart, School, ChevronFirst } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useLayoutEffect, useState } from "react";
 
@@ -13,14 +13,14 @@ export function SideNav() {
         } else {
             localStorage.setItem('state', currentIcon.toString())
         }
-    }, [currentIcon])
+    }, [])
 
     useEffect(() => {
         localStorage.setItem('state', currentIcon.toString())
     }, [currentIcon])
 
     return (
-        <div className="fixed px-3   py-10 mx-1 flex flex-col bg-purple-500 justify-center items-center rounded-full transition-all shadow-xl ">
+        <div className="fixed px-3 py-10 mx-1 flex flex-col bg-purple-500 justify-center items-center rounded-full transition-all shadow-xl ">
 
             <Link className="mb-5" href="/" onClick={() => setCurrentIcon(0)}>
                 <div className={`rounded-full ${currentIcon == 0 && "bg-emerald-400  "} p-2 h-10 pb-10 `}>
@@ -42,6 +42,12 @@ export function SideNav() {
 
             <Link className="mb-5" href="/third_floor" onClick={() => setCurrentIcon(3)} >
                 <div className={`rounded-full ${currentIcon == 3 && "bg-emerald-400 "} p-2 h-10 pb-10`} >
+                    <ChevronFirst className="text-white hover:text-black transition-all cursor-pointer" size={30} />
+                </div>
+            </Link>
+
+            <Link className="mb-5" href="/amphi" onClick={() => setCurrentIcon(4)} >
+                <div className={`rounded-full ${currentIcon == 4 && "bg-emerald-400 "} p-2 h-10 pb-10`} >
                     <School className="text-white hover:text-black transition-all cursor-pointer" size={30} />
                 </div>
             </Link>

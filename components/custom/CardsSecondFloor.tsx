@@ -1,12 +1,9 @@
 import { Droplet, Zap } from "lucide-react";
 import { Card, CardDescription, CardTitle } from "../ui/card";
 import { Progress } from "../ui/progress";
-import { Dialog, DialogContent, DialogDescription, DialogFooter, DialogHeader, DialogTitle, DialogTrigger } from "../ui/dialog";
-import { Label } from "../ui/label";
-import { Input } from "../ui/input";
-import { Button } from "../ui/button";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "../ui/dialog";
 
-export function CardsHome() {
+export function CardsSecondFloor() {
     return (
         <div className="mx-20 grid grid-cols-2 gap-10">
             <Dialog>

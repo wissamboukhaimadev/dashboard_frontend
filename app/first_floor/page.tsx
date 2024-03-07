@@ -1,6 +1,6 @@
 "use client"
 
-import { CardsValues } from "@/components/custom/CardsValues";
+import { CardsFirstFloor } from "@/components/custom/CardsFirstFloor";
 import { ChartsData } from "@/components/custom/ChartsData";
 import { NavBar } from "@/components/custom/NavBar";
 import { SideNav } from "@/components/custom/SideNav";
@@ -13,10 +13,10 @@ export default function GEDepartment() {
                 <div className="w-20 ">
                     <SideNav />
                 </div>
-                <div className="ml-20 mt-10" >
+                <div className="mx-28 mt-10 w-full" >
 
 
-                    <CardsValues />
+                    <CardsFirstFloor />
 
                     <ChartsData />
                 </div>
